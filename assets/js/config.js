@@ -1,0 +1,2 @@
+/* Central place for studio details. Replace the email and social handles when ready. */
+window.MAD_WEB_CONFIG={email:"hello@yourstudio.com",social:{snapchat:"",instagram:"",tiktok:""},metrics:{snapchat:5,instagram:2,tiktok:7,total:14},metricsPeriod:"One month"};
