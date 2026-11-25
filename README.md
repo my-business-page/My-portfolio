@@ -1,24 +1,31 @@
-# studio® — Portfolio
+# Mad Web Studios® — portfolio
 
-A responsive, motion-led portfolio website for an independent digital studio.
+A static, responsive studio portfolio built with semantic HTML, modular CSS and vanilla JavaScript. No build step or backend is required.
 
-## Files
-- `index.html` — semantic page structure and content
-- `style.css` — visual system, responsive layouts and motion
-- `script.js` — scroll progress, reveal-on-scroll and mobile navigation
+## Structure
 
-## Run locally
-Open `index.html` in a browser. No build step or backend is required.
+- `index.html` — page structure, metadata and accessible landmarks
+- `assets/css/` — design tokens, base styles, layout, components and motion
+- `assets/js/` — central configuration, reveal observer, independent social metric dials, navigation and effects
 
-## Publish with GitHub Pages
-1. Open the repository's **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select `main` and `/ (root)`, then save.
-4. GitHub Pages will provide the public URL after deployment.
+## Deploy with GitHub Pages
 
-## Before launch
-- Replace the temporary contact email in `index.html` with the studio's real contact channel.
-- Add verified project case studies, client names (with permission), and approved metrics.
-- Update SEO description and social preview metadata once the final positioning is approved.
+1. Open repository **Settings → Pages**.
+2. Under Build and deployment, choose **Deploy from a branch**.
+3. Select branch `main` and folder `/(root)`, then Save.
+4. Wait for the Pages deployment to finish.
 
-The project cards are explicitly marked as concepts; no client results or performance statistics are fabricated.
+## Before public launch
+
+- Replace `hello@yourstudio.com` in `assets/js/config.js` with the studio's real contact email.
+- Add the Snapchat, Instagram and TikTok usernames in the `social` object in `assets/js/config.js` (without the @ symbol).
+- Confirm the monthly view figures in each platform's analytics before presenting them as verified results. The current values are the figures supplied for this portfolio, not independently verified by this code.
+- Replace concept work with approved client work when available. Concept visuals are labelled as concepts in the page.
+
+## Editing the social metrics
+
+Edit the `metrics` values in `assets/js/config.js` and the matching `data-value`, labels and displayed figures in `index.html` together so the animated dial and visible number remain consistent.
+
+## Technology
+
+HTML5, CSS3, JavaScript (ES6), SVG, JSON-style configuration and an inline SVG noise texture. Uses Google Fonts when a network connection is available and falls back to system fonts.
